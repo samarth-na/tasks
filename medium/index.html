@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-left">
+                <span class="hamburger">&#9776;</span>
+                <span class="logo">Medium</span>
+            </div>
+            <div class="header-center">
+                <div class="search-bar">
+                    <span class="search-icon">&#128269;</span>
+                    <input type="text" placeholder="Search" class="search-input">
+                </div>
+            </div>
+            <div class="header-right">
+                <span class="write-btn">&#9998; Write</span>
+                <span class="bell-icon">&#128276;</span>
+                <span class="profile-icon">&#128100;</span>
+            </div>
+        </header>
+
+        <div class="promo-banner">
+            <span class="star-icon">&#11088;</span>
+            <span class="promo-text">Get unlimited access to the best of Medium for less than $1/week.</span>
+            <a href="#" class="become-member">Become a member</a>
+            <span class="close-btn">&times;</span>
+        </div>
+
+        <div class="main-layout">
+            <aside class="left-sidebar">
+                <nav class="nav-links">
+                    <a href="#" class="nav-item active">
+                        <span class="nav-icon">&#8962;</span>
+                        <span class="nav-text">Home</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">&#9734;</span>
+                        <span class="nav-text">Library</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">&#9679;</span>
+                        <span class="nav-text">Profile</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">&#9776;</span>
+                        <span class="nav-text">Stories</span>
+                    </a>
+                    <a href="#" class="nav-item">
+                        <span class="nav-icon">&#9632;</span>
+                        <span class="nav-text">Stats</span>
+                    </a>
+                </nav>
+
+                <div class="following-section">
+                    <div class="following-header">
+                        <span>Following</span>
+                        <span class="arrow">&#9654;</span>
+                    </div>
+                    <div class="following-content">
+                        <span class="discover-icon">&#128100;</span>
+                        <div class="following-text">
+                            <p>Discover more writers and publications to follow.</p>
+                            <a href="#" class="see-suggestions">See suggestions</a>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="main-feed">
+                <div class="feed-tabs">
+                    <button class="tab active">For you</button>
+                    <button class="tab">Featured</button>
+                </div>
+
+                <div class="info-banner">
+                    <p>"Following" and your topics are now part of the new Following page, which you can find from the sidebar.</p>
+                    <a href="#" class="okay-gotit">Okay, got it</a>
+                </div>
+
+                <article class="article-card">
+                    <div class="article-content">
+                        <div class="article-author">
+                            <span class="author-avatar">&#128100;</span>
+                            <span class="author-name">Ann P.</span>
+                        </div>
+                        <h2 class="article-title">Note-Taking is Now of the Past: Overlays are Here</h2>
+                        <div class="article-meta">
+                            <span class="article-date">Jul 20</span>
+                            <div class="article-actions">
+                                <span class="action-icon">&#128528;</span>
+                                <span class="action-icon">&#8943;</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article-image">
+                        <div class="image-placeholder"></div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-content">
+                        <div class="article-author">
+                            <span class="author-avatar dsc">&#128218;</span>
+                            <span class="author-name">In Data Science Collective by James Wilkins</span>
+                        </div>
+                        <h2 class="article-title">You're using ChatGPT wrong. Here's how to prompt like a pro</h2>
+                    </div>
+                    <div class="article-image">
+                        <div class="image-placeholder gradient"></div>
+                    </div>
+                </article>
+            </main>
+
+            <aside class="right-sidebar">
+                <h3 class="sidebar-title">Staff Picks</h3>
+
+                <div class="staff-pick">
+                    <div class="pick-author">
+                        <span class="pick-avatar">&#128100;</span>
+                        <span class="pick-name">Amy Widdowson</span>
+                    </div>
+                    <h4 class="pick-title">4996 Miles, One Bolt, No Regrets: An Electric Vehicle Road Trip In 2025</h4>
+                    <div class="pick-meta">
+                        <span class="pick-star">&#11088;</span>
+                        <span class="pick-date">Aug 12</span>
+                    </div>
+                </div>
+
+                <div class="staff-pick">
+                    <div class="pick-author">
+                        <span class="pick-avatar prism">&#127752;</span>
+                        <span class="pick-name">In Prism & Pen by Kira Ry</span>
+                    </div>
+                    <h4 class="pick-title">Should My Kids Call Me Mom or Dad? A Transgender Parent's Story.</h4>
+                    <div class="pick-meta">
+                        <span class="pick-star">&#11088;</span>
+                        <span class="pick-date">1d ago</span>
+                    </div>
+                </div>
+
+                <div class="staff-pick">
+                    <div class="pick-author">
+                        <span class="pick-avatar food">&#127860;</span>
+                        <span class="pick-name">In Sharing Food by Ninad Kulkarni</span>
+                    </div>
+                    <h4 class="pick-title">Eating With My Hands Doesn't Make Me Less Civilised</h4>
+                    <div class="pick-meta">
+                        <span class="pick-star">&#11088;</span>
+                        <span class="pick-date">Jul 4</span>
+                    </div>
+                </div>
+
+                <a href="#" class="see-full-list">See the full list</a>
+            </aside>
+        </div>
+    </div>
+</body>
+</html>
