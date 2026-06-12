@@ -276,14 +276,153 @@ function task11() {
 	return bestRepo;
 }
 
-task1();
-task2();
-task3();
-task4();
-task5();
-task6();
-task7();
-task8();
-task9();
-task10();
-task11();
+function task12() {
+	const products = [
+		{ name: "Laptop", price: 50000 },
+		{ name: "Phone", price: 20000 },
+		{ name: "Tablet", price: 15000 },
+	];
+
+	const prices = [];
+	for (let i = 0; i < products.length; i++) {
+		prices.push(products[i].price);
+	}
+
+	let highest = prices[0];
+	for (let i = 1; i < prices.length; i++) {
+		if (prices[i] > highest) {
+			highest = prices[i];
+		}
+	}
+	return { prices, highest };
+}
+
+function task13() {
+	const numbers = [1, 2, 3, 4, 5, 6];
+
+	const squares = [];
+	for (let i = 0; i < numbers.length; i++) {
+		if (numbers[i] % 2 === 0) {
+			squares.push(numbers[i] * numbers[i]);
+		}
+	}
+	return squares;
+}
+
+function task14() {
+	const marks = [45, 80, 60, 90, 30];
+
+	const filtered = [];
+	for (let i = 0; i < marks.length; i++) {
+		if (marks[i] > 50) {
+			filtered.push(marks[i]);
+		}
+	}
+
+	let sum = 0;
+	for (let i = 0; i < filtered.length; i++) {
+		sum += filtered[i];
+	}
+	const average = sum / filtered.length;
+	return average;
+}
+
+function task15() {
+	const cart = [
+		{ item: "Book", price: 200 },
+		{ item: "Pen", price: 20 },
+		{ item: "Bag", price: 500 },
+	];
+
+	let total = 0;
+	for (let i = 0; i < cart.length; i++) {
+		total += cart[i].price;
+	}
+	return total;
+}
+
+function task16() {
+	const names = ["john", "emma", "alex"];
+
+	const upper = [];
+	for (let i = 0; i < names.length; i++) {
+		upper.push(names[i].toUpperCase());
+	}
+	return upper;
+}
+
+function task17() {
+	const numbers = [10, 20, 30, 40];
+
+	const sum = numbers.reduce((acc, num) => acc + num, 0);
+	return sum;
+}
+
+function task18() {
+	const users = [
+		{ name: "John", age: 25 },
+		{ name: "Emma", age: 16 },
+		{ name: "Alex", age: 20 },
+	];
+
+	const names = [];
+	for (let i = 0; i < users.length; i++) {
+		if (users[i].age >= 18) {
+			names.push(users[i].name);
+		}
+	}
+	return names;
+}
+
+function task19() {
+	const products = [
+		{ name: "Laptop", price: 50000 },
+		{ name: "Phone", price: 20000 },
+	];
+
+	const updated = [];
+	for (let i = 0; i < products.length; i++) {
+		updated.push({
+			name: products[i].name,
+			price: products[i].price - products[i].price * 0.1,
+		});
+	}
+	return updated;
+}
+
+function task20() {
+	const results = [
+		{ name: "John", marks: 80 },
+		{ name: "Emma", marks: 40 },
+		{ name: "Alex", marks: 70 },
+	];
+
+	const passed = [];
+	for (let i = 0; i < results.length; i++) {
+		if (results[i].marks >= 50) {
+			passed.push(results[i].name);
+		}
+	}
+	return passed;
+}
+
+console.log(task1(), "\n");
+console.log(task2(), "\n");
+console.log(task3(), "\n");
+console.log(task4(), "\n");
+console.log(task5(), "\n");
+console.log(task6(), "\n");
+console.log(task7(), "\n");
+console.log(task8(), "\n");
+console.log(task9(), "\n");
+console.log(task10(), "\n");
+console.log(task11(), "\n");
+console.log(task12(), "\n");
+console.log(task13(), "\n");
+console.log(task14(), "\n");
+console.log(task15(), "\n");
+console.log(task16(), "\n");
+console.log(task17(), "\n");
+console.log(task18(), "\n");
+console.log(task19(), "\n");
+console.log(task20(), "\n");
