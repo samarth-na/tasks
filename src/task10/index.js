@@ -10,9 +10,9 @@ function task1() {
 		for (let j = 0; j < students[i].marks.length; j++) {
 			sum += students[i].marks[j];
 		}
-		const avg = sum / students[i].marks.length;
-		if (avg >= 85) {
-			avg.push({ name: students[i].name, avg });
+		const avgMark = sum / students[i].marks.length;
+		if (avgMark >= 85) {
+			avg.push({ name: students[i].name, avg: avgMark });
 		}
 	}
 
@@ -27,6 +27,7 @@ function task1() {
 	}
 	return avg;
 }
+
 function task2() {
 	const data = [
 		{ category: "Electronics", amount: 500 },
@@ -50,7 +51,9 @@ function task2() {
 			result.push(cat);
 		}
 	}
+	return result;
 }
+
 function task3() {
 	const paragraph =
 		"The quick brown fox jumps over the lazy dog. The fox is quick.";
@@ -100,7 +103,9 @@ function task3() {
 	for (let i = 0; i < 3 && i < sorted.length; i++) {
 		top3.push(sorted[i].word);
 	}
+	return top3;
 }
+
 function task4() {
 	const employees = [
 		{ name: "A", dept: "IT", salary: 50000 },
@@ -125,7 +130,9 @@ function task4() {
 			bestDept = dept;
 		}
 	}
+	return bestDept;
 }
+
 function task5() {
 	const products = [
 		{ name: "Laptop", stock: 5, price: 50000 },
@@ -139,6 +146,7 @@ function task5() {
 			totalValue += products[i].stock * products[i].price;
 		}
 	}
+	return totalValue;
 }
 
 function task6() {
@@ -155,7 +163,9 @@ function task6() {
 			result.push(posts[i].postId);
 		}
 	}
+	return result;
 }
+
 function task7() {
 	const movies = [
 		{ title: "Movie A", rating: 8.5, genres: ["Action"] },
@@ -172,7 +182,9 @@ function task7() {
 			}
 		}
 	}
+	return genreCount;
 }
+
 function task8() {
 	const customers = [
 		{
@@ -201,7 +213,9 @@ function task8() {
 			bestCustomer = c;
 		}
 	}
+	return bestCustomer;
 }
+
 function task9() {
 	const txns = [
 		{ type: "credit", amount: 1000 },
@@ -215,8 +229,9 @@ function task9() {
 		if (txns[i].type === "credit") credits += txns[i].amount;
 		else if (txns[i].type === "debit") debits += txns[i].amount;
 	}
-	const balance = credits - debits;
+	return credits - debits;
 }
+
 function task10() {
 	const users = [
 		{ user: "A", actions: ["login", "logout"] },
@@ -240,6 +255,7 @@ function task10() {
 			bestAction = a;
 		}
 	}
+	return bestAction;
 }
 
 function task11() {
@@ -257,4 +273,17 @@ function task11() {
 			bestRepo = repos[i].repo;
 		}
 	}
+	return bestRepo;
 }
+
+task1();
+task2();
+task3();
+task4();
+task5();
+task6();
+task7();
+task8();
+task9();
+task10();
+task11();
