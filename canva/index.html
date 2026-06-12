@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canva - Design Editor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <!-- Top Navigation Bar -->
+    <header class="top-nav">
+      <div class="top-nav-left">
+        <button class="nav-item">File</button>
+        <button class="nav-item">Resize</button>
+        <button class="nav-item editing-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          Editing
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <div class="nav-divider"></div>
+        <button class="icon-btn undo">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="9 14 4 9 9 4"/><path d="M20 20v-7a4 4 0 0 0-4-4H4"/></svg>
+        </button>
+        <button class="icon-btn redo">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="15 14 20 9 15 4"/><path d="M4 20v-7a4 4 0 0 1 4-4h12"/></svg>
+        </button>
+        <button class="icon-btn cloud-save">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+          <span class="new-badge">New</span>
+        </button>
+      </div>
+      <div class="top-nav-center">
+        <span class="design-name">Sample</span>
+      </div>
+      <div class="top-nav-right">
+        <button class="trial-btn">
+          <span class="crown-icon">👑</span>
+          Start your trial for ₹0
+        </button>
+        <button class="avatar-btn">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23FF6B6B'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23E040FB'/%3E%3Ccircle cx='12' cy='9' r='4' fill='white'/%3E%3Cpath d='M4 20c0-4 3.6-7 8-7s8 3 8 7' fill='white'/%3E%3C/svg%3E" alt="avatar">
+        </button>
+        <button class="icon-btn analytics">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+        </button>
+        <button class="icon-btn notifications">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+        </button>
+        <button class="present-btn">
+          Present
+          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+        </button>
+        <button class="share-btn">Share</button>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <!-- Left Sidebar -->
+      <aside class="left-sidebar">
+        <nav class="sidebar-nav">
+          <a href="#" class="sidebar-item active">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            <span>Templates</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>
+            <span>Elements</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 7 4 4 20 4 20 7"/><line x1="9" y1="20" x2="15" y2="20"/><line x1="12" y1="4" x2="12" y2="20"/></svg>
+            <span>Text</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+            <span>Brand</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            <span>Uploads</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+            <span>Tools</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+            <span>Projects</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/><line x1="17" y1="17" x2="22" y2="17"/></svg>
+            <span>Apps</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            <span>Magic Media</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+            <span>Audio</span>
+          </a>
+          <a href="#" class="sidebar-item">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            <span>videoforme</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Templates Panel -->
+      <aside class="templates-panel">
+        <div class="search-section">
+          <div class="search-bar">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" placeholder="Describe your ideal design">
+            <button class="mic-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            </button>
+          </div>
+          <div class="search-actions">
+            <button class="generate-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              Generate
+            </button>
+            <button class="search-btn">Search</button>
+          </div>
+        </div>
+
+        <div class="panel-content">
+          <div class="section-header">
+            <h3>Recently used</h3>
+            <a href="#" class="see-all">See all</a>
+          </div>
+          <div class="recent-templates">
+            <div class="template-thumb">
+              <div class="thumb-content" style="background: linear-gradient(135deg, #E8F5E9 0%, #C8E6C9 100%);">
+                <div style="display:flex;gap:4px;justify-content:center;padding-top:20px;">
+                  <div style="width:20px;height:20px;background:#4CAF50;border-radius:50%;"></div>
+                  <div style="width:20px;height:20px;background:#2196F3;border-radius:50%;"></div>
+                  <div style="width:20px;height:20px;background:#9C27B0;border-radius:50%;"></div>
+                  <div style="width:20px;height:20px;background:#FF9800;border-radius:50%;"></div>
+                </div>
+              </div>
+            </div>
+            <div class="template-thumb">
+              <div class="thumb-content" style="background: linear-gradient(135deg, #E3F2FD 0%, #BBDEFB 100%);">
+                <div style="padding:8px;text-align:center;">
+                  <div style="font-size:6px;font-weight:bold;color:#333;">PROJECT</div>
+                  <div style="font-size:8px;font-weight:900;color:#1a237e;">PRESENTATION</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-header">
+            <h3>All results</h3>
+          </div>
+          <div class="all-results">
+            <div class="template-card">
+              <div class="card-content" style="background:#1a1a2e;color:white;padding:8px;">
+                <div style="font-size:7px;letter-spacing:1px;">PORTFOLIO.</div>
+              </div>
+            </div>
+            <div class="template-card">
+              <div class="card-content" style="background:#2d1b4e;color:white;padding:8px;">
+                <div style="font-size:7px;font-style:italic;color:#ff6b6b;">Creative</div>
+                <div style="font-size:6px;">Portfolio</div>
+              </div>
+            </div>
+            <div class="template-card">
+              <div class="card-content" style="background:#ff4444;color:white;padding:8px;">
+                <div style="font-size:8px;font-weight:900;">CREATIVE<br>BRIEF</div>
+              </div>
+            </div>
+            <div class="template-card">
+              <div class="card-content" style="background:#f5f5f5;color:#333;padding:8px;">
+                <div style="font-size:6px;">Creative</div>
+                <div style="font-size:7px;font-weight:bold;">Portfolio</div>
+              </div>
+            </div>
+            <div class="template-card">
+              <div class="card-content" style="background:#1a1a1a;color:white;padding:8px;">
+                <div style="font-size:6px;">BUSINESS PLAN</div>
+                <div style="font-size:5px;color:#888;">Pitch Deck</div>
+              </div>
+            </div>
+            <div class="template-card">
+              <div class="card-content" style="background:#8B0000;color:white;padding:8px;">
+                <div style="font-size:7px;font-weight:900;">PITCH<br>DECK</div>
+              </div>
+            </div>
+            <div class="template-card">
+              <div class="card-content" style="background:#f5f5f5;padding:8px;">
+                <div style="font-size:6px;">portfolio</div>
+                <div style="font-size:5px;color:#888;">Design Studio</div>
+              </div>
+            </div>
+            <div class="template-card">
+              <div class="card-content" style="background:#f5f5f5;padding:8px;">
+                <div style="font-size:7px;font-style:italic;">portfolio</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Canvas Area -->
+      <main class="canvas-area">
+        <!-- Context Toolbar -->
+        <div class="context-toolbar">
+          <button class="toolbar-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            Edit
+          </button>
+          <button class="color-picker" style="background:#FF0000;"></button>
+          <button class="toolbar-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          </button>
+          <button class="toolbar-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+          </button>
+          <button class="toolbar-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+          </button>
+          <div class="toolbar-divider"></div>
+          <button class="toolbar-btn">Effects</button>
+          <button class="toolbar-btn">Animate</button>
+          <button class="toolbar-btn">Position</button>
+          <div class="toolbar-divider"></div>
+          <button class="toolbar-btn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </button>
+        </div>
+
+        <!-- Canvas -->
+        <div class="canvas-wrapper">
+          <div class="canvas">
+            <!-- Light Green Circle -->
+            <div class="shape circle" style="position:absolute;left:80px;top:60px;width:200px;height:200px;background:#B2FF59;border-radius:50%;"></div>
+
+            <!-- Yellow Square -->
+            <div class="shape square" style="position:absolute;left:370px;top:60px;width:200px;height:200px;background:#FFEB3B;"></div>
+
+            <!-- Orange Triangle -->
+            <div class="shape triangle" style="position:absolute;left:650px;top:60px;width:0;height:0;border-left:110px solid transparent;border-right:110px solid transparent;border-bottom:200px solid #FF9800;"></div>
+
+            <!-- Navy Pentagon -->
+            <div class="shape pentagon" style="position:absolute;left:950px;top:60px;">
+              <svg width="200" height="200" viewBox="0 0 200 200">
+                <polygon points="100,10 190,75 155,190 45,190 10,75" fill="#1A237E"/>
+              </svg>
+            </div>
+
+            <!-- Black Cross/Plus -->
+            <div class="shape cross" style="position:absolute;left:100px;top:370px;">
+              <svg width="180" height="180" viewBox="0 0 180 180">
+                <rect x="60" y="10" width="60" height="160" fill="#111"/>
+                <rect x="10" y="60" width="160" height="60" fill="#111"/>
+              </svg>
+            </div>
+
+            <!-- Purple Parallelogram -->
+            <div class="shape parallelogram" style="position:absolute;left:380px;top:370px;">
+              <svg width="220" height="180" viewBox="0 0 220 180">
+                <polygon points="50,170 220,170 170,10 0,10" fill="#CE93D8"/>
+              </svg>
+            </div>
+
+            <!-- Purple Arrow -->
+            <div class="shape arrow" style="position:absolute;left:680px;top:340px;">
+              <svg width="180" height="220" viewBox="0 0 180 220">
+                <polygon points="90,0 180,80 130,80 130,220 50,220 50,80 0,80" fill="#7C4DFF"/>
+              </svg>
+            </div>
+
+            <!-- Red Heart (selected) -->
+            <div class="shape heart selected" style="position:absolute;left:1000px;top:360px;">
+              <div class="selection-box">
+                <div class="selection-handle top-left"></div>
+                <div class="selection-handle top-right"></div>
+                <div class="selection-handle bottom-left"></div>
+                <div class="selection-handle bottom-right"></div>
+                <div class="selection-handle top-center"></div>
+                <div class="selection-handle bottom-center"></div>
+              </div>
+              <svg width="180" height="170" viewBox="0 0 24 24" fill="#F44336">
+                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+              </svg>
+              <!-- Floating toolbar -->
+              <div class="floating-toolbar">
+                <button><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="12" y1="8" x2="12" y2="16"/><line x1="8" y1="12" x2="16" y2="12"/></svg></button>
+                <button><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></button>
+                <button><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg></button>
+                <button><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg></button>
+                <button><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/></svg></button>
+              </div>
+              <!-- Rotation handle -->
+              <div class="rotation-handle">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2"><polyline points="23 4 23 10 17 10"/><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom Bar -->
+        <div class="bottom-bar">
+          <div class="bottom-left">
+            <button class="notes-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+              Notes
+            </button>
+            <button class="timer-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Timer
+            </button>
+          </div>
+          <div class="bottom-center">
+            <div class="page-thumbnails">
+              <div class="page-thumb active">
+                <div class="thumb-canvas">
+                  <div style="width:12px;height:12px;background:#B2FF59;border-radius:50%;position:absolute;left:5px;top:5px;"></div>
+                  <div style="width:10px;height:10px;background:#FFEB3B;position:absolute;left:22px;top:5px;"></div>
+                  <div style="width:0;height:0;border-left:6px solid transparent;border-right:6px solid transparent;border-bottom:10px solid #FF9800;position:absolute;left:38px;top:5px;"></div>
+                  <svg width="10" height="10" viewBox="0 0 200 200" style="position:absolute;left:54px;top:5px;"><polygon points="100,10 190,75 155,190 45,190 10,75" fill="#1A237E"/></svg>
+                  <svg width="10" height="10" viewBox="0 0 180 180" style="position:absolute;left:5px;top:22px;"><rect x="60" y="10" width="60" height="160" fill="#111"/><rect x="10" y="60" width="160" height="60" fill="#111"/></svg>
+                  <svg width="12" height="10" viewBox="0 0 220 180" style="position:absolute;left:20px;top:22px;"><polygon points="50,170 220,170 170,10 0,10" fill="#CE93D8"/></svg>
+                  <svg width="10" height="12" viewBox="0 0 180 220" style="position:absolute;left:38px;top:20px;"><polygon points="90,0 180,80 130,80 130,220 50,220 50,80 0,80" fill="#7C4DFF"/></svg>
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="#F44336" style="position:absolute;left:54px;top:24px;"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                </div>
+              </div>
+              <button class="add-page-btn">+</button>
+              <button class="dropdown-btn">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="bottom-right">
+            <div class="zoom-controls">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input type="range" min="10" max="200" value="53" class="zoom-slider">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#666" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+              <span class="zoom-value">53%</span>
+            </div>
+            <div class="pages-indicator">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+              Pages
+              <span class="page-count">1/1</span>
+            </div>
+            <button class="icon-btn grid-view">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            </button>
+            <button class="icon-btn fullscreen">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 3 21 3 21 9"/><polyline points="9 21 3 21 3 15"/><line x1="21" y1="3" x2="14" y2="10"/><line x1="3" y1="21" x2="10" y2="14"/></svg>
+            </button>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
